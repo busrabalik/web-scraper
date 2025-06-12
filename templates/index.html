@@ -13,12 +13,12 @@
             background-size: cover;
             background-position: center center;
             padding: 20px;
-            background-color: #f8f0ff;
+            background-color: #c897b1;
             color: #333;
         }
         h1 {
             text-align: center;
-            color: #6f00b6;
+            color: #3e0761;
             margin-top: 20px;
             margin-bottom: 30px;
         }
@@ -29,11 +29,11 @@
             box-shadow: 0 0 12px rgba(0,0,0,0.05);
         }
         .card-title {
-            color: #6f00b6;
+            color: #3e0761;
             font-weight: bold;
         }
         .read-more {
-            color: #6f00b6;
+            color: #3e0761;
             font-weight: 500;
             cursor: pointer;
         }
@@ -44,6 +44,12 @@
     <div class="container">
         <h1>🔮 Burç Yorumları</h1>
         <p class="text-center"><a href="/about">Hakkında</a></p>
+
+        
+        <div class="date-info">
+            <p><strong>Güncel Veriler Tarihi: </strong>{{ date }}</p>
+        </div>
+
 
         {% set zodiac_icons = {
             "Koç": "♈", "Boğa": "♉", "İkizler": "♊", "Yengeç": "♋",
@@ -90,5 +96,8 @@
             });
         });
     </script>
+     <h2>Arşiv</h2>
+     <p>Önceki verilere ulaşmak için arşive göz atın.</p>
+     <a href="/archive">Arşive Git</a>
 </body>
 </html>

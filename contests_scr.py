@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
+
 signs = [
     "Koç", "Boğa", "İkizler", "Yengeç", "Aslan", "Başak",
     "Terazi", "Akrep", "Yay", "Oğlak", "Kova", "Balık"

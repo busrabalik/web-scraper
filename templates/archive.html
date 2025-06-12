@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arşiv</title>
+</head>
+<body>
+    <h1>Arşiv</h1>
+    
+    <p>Geçmiş verilere aşağıdaki tarihlerden ulaşabilirsiniz:</p>
+    
+    <ul>
+        {% for file in files %}
+            <li><a href="/archive/{{ file }}">{{ file.split('_')[1].split('.')[0] }}</a></li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Ana Sayfaya Dön</a>
+</body>
+</html>
